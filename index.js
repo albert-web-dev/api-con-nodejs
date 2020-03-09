@@ -8,7 +8,7 @@ const port = 3001;
 //conexion con mongo
 mongoose.set('useFindAndModify', true);
 mongoose.Promise = global.Promise;
-mongoose.connect('mongodb://localhost:27017/apiportfolio', {useNewUrlParser: true})
+mongoose.connect('mongodb://heroku_175t5d8h:heroku_175t5d8h@ds127825.mlab.com:27825/heroku_175t5d8h', {useNewUrlParser: true})
         .then(()=>{
             console.log("conexión exitosa");
             app.listen(port, ()=>{
